@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Welcome to Layer7</title>
+		<link rel="icon" href="images/favicon.ico">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/camera.css">
+		<link rel="stylesheet" href="css/form.css">
+		<script src="js/jquery.js"></script>
+		<script src="js/jquery-migrate-1.1.1.js"></script>
+		<script src="js/superfish.js"></script>
+		<script src="js/forms.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/jquery.equalheights.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.ui.totop.js"></script>
+		<script src="js/tms-0.4.1.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.slider_wrapper')._TMS({
+					show:0,
+					pauseOnHover:false,
+					prevBu:'.prev',
+					nextBu:'.next',
+					playBu:false,
+					duration:800,
+					preset:'fade',
+					pagination:true,//'.pagination',true,'<ul></ul>'
+					pagNums:false,
+					slideshow:8000,
+					numStatus:false,
+					banners: 'fade',
+					waitBannerAnimation:false,
+					progressBar:false
+				});
+			});
+			$(document).ready(function(){
+				!function(){
+			var map=[]
+			 ,names=[]
+			 ,win=$(window)
+			 ,header=$('header')
+			 ,currClass
+			$('.content').each(function(n){
+			 map[n]=this.offsetTop
+			 names[n]=$(this).attr('id')
+			})
+			win
+			 .on('scroll',function(){
+				var i=0
+				while(map[i++]<=win.scrollTop());
+				if(currClass!==names[i-2])
+				currClass=names[i-2]
+				header.removeAttr("class").addClass(names[i-2])
+			 })
+			}(); });
+					function goToByScroll(id){
+				$('html,body').animate({scrollTop: $("#"+id).offset().top},'slow');
+				}
+				$(document).ready(function(){
+					$().UItoTop({ easingType: 'easeOutQuart' });
+				});
+		</script>
+		<!--[if lt IE 8]>
+			<div style=' clear: both; text-align:center; position: relative;'>
+				<a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+					<img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+				</a>
+			</div>
+		<![endif]-->
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+			<link rel="stylesheet" media="screen" href="css/ie.css">
+		<![endif]-->
+	</head>
+	<body class="">
+<!--==============================header=================================-->
+		<header class="page1">
+			<div class="container_12">
+				<div class="grid_12">
+					<h1 style="font-size:30px;">Layer7</h1><img src="./images/ailen.png" width="55" height="60">
+					<div class="menu_block">
+						<nav class="">
+							<ul class="sf-menu">
+								<li class="current men"><a onClick="goToByScroll('page1'); return false;" href="#">Home </a> <strong class="hover"></strong></li>
+								<li class="men1"><a onClick="goToByScroll('page2'); return false;" href="#">About</a><strong class="hover"></strong></li>
+								<li class=" men2"><a onClick="goToByScroll('page3'); return false;" href="#">Awards</a> <strong class="hover"></strong></li>
+								<li class=" men3"><a onClick="goToByScroll('page4'); return false;" href="#">Q&A</a> <strong class="hover"></strong></li>
+								<li class=" men4"><a onClick="goToByScroll('page5'); return false;" href="#">Contacts</a> <strong class="hover"></strong></li>
+							</ul>
+						</nav>
+						<div class="clear"></div>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+<!--=======content================================-->
+		<div id="page1" class="content">
+			<div class="ic"></div>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slider_wrapper">
+						<ul class="items">
+							<li>
+								<img src="images/spacer.gif" alt="">
+								<div class="caption banner">
+									<h2>Layer7<br>Hacking club</h2>
+								</div>
+							</li>
+							<li>
+								<img src="images/spacer.gif" alt="">
+								<div class="caption banner">
+									<h2>Sunrin Internet Highschool hacking club</h2>
+								</div>
+							</li>
+							<li>
+								<img src="images/spacer.gif" alt="">
+								<div class="caption banner">
+									<h2>The best hacking club</h2>
+								</div>
+							</li>
+							<li>
+								<img src="images/spacer.gif" alt="">
+								<div class="caption banner">
+									<h2>Pwn.Pwn.Pwn</h2>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="socials">
+						<a href="https://www.facebook.com/pages/Layer7/434666036568315?ref=ts&fref=ts"></a>
+                    </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+		<div id="page2" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slogan">
+						<h3>Amazing <a onClick="goToByScroll('page3'); return false;" href="#"><span>Awards</span></a> And Skills.&nbsp&nbsp<img src="./images/write.png" width="30" height="40"></h3>
+						<div class="text1">
+						 수많은 대회에서의 수상과 컨퍼런스 참가, 대회 운영까지 하는 역사깊은 고등학생 최고의 해킹동아리 Layer7. <br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp(현 14기)
+						</div>
+					</div>
+				</div><a href="#">
+				<div class="grid_3">
+					<div class="box maxheight">
+						<img src="images/box1_img3.png" alt="">
+						<div class="text1">Time?</div>
+						<div class="socials1">
+						</div>
+						Every<br>Monday<br>Wednesday<br>Friday
+					</div>
+				</div></a><a href="#">
+				<div class="grid_3">
+					<div class="box maxheight">
+						<img src="images/box1_img1.png" alt="">
+						<div class="text1">What we do</div>
+						<div class="socials1">
+						</div>
+						CTFs<br>Conferences<br>Hackerthons<br>Own CTF
+					</div>
+				</div></a><a href="#">
+				<div class="grid_3">
+					<div class="box maxheight">
+						<img src="images/box1_img4.png" alt="">
+						<div class="text1">Teacher?</div>
+						<div class="socials1">
+						</div>
+						You Will Be Tought By<br>The Best Teenager Hackers <br>In Korea And Beyond<br>
+					</div>
+				</div></a><a href="#">
+				<div class="grid_3">
+					<div class="box maxheight">
+						<img src="images/box1_img2.png" alt="">
+						<div class="text1">Studies?</div>
+						<div class="socials1">
+						</div>
+						System Hacking<br>Reversing<br>Forensics<br>Web Hacking<br>etc..
+					</div>
+				</div></a>
+			</div>
+		</div>
+<div id="page3" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slogan">
+						<h3>Layer7's Awards&nbsp&nbsp<img src="./images/zzim.png" width="40" height="40"></h3>
+						<div class="text1">
+							<span style="font-size:25px;"><b>2007년</b></span><br>
+대한민국 최초 KISA 해킹방어대회 고등학생팀 본선 진출<br>
+<br><span style="font-size:25px;"><b>2008년</b></span><br>
+선린 전문동아리 최초(?) 자체 책 출판(Layer7 Hacking & Security)<br>
+<br><span style="font-size:25px;"><b>2009년</b></span><br>
+순천향대학교 정보보호페스티벌 준우승 1개, 장려상 2 개
+<br>중고생 정보보호올림피아드 대회 은상
+<br>제 26회 서울특별시 정보올림피아드(공모부문) 은상
+<br>제 26회 서울특별시 정보올림피아드(경시부분) 은상
+<br>모의해킹대회 은상 (한국광물자원공사)
+<br>제 6회 KISAS 해킹방어대회 본선 진출(팀 전원 Layer7 8기)
+<br>ISEC CTF 준우승 (지식경제부 장관상)
+<br>대한민국 소프트웨어 공모대전 학생부 동상
+<br>부원 중 1인 Defcon CTF 본선진출<br>
+<br><span style="font-size:25px;"><b>2010년</b></span><br>
+Paradox Conference 준우승
+<br>대한민국 최초 고등학생에 의한 전국 중고교생 해킹대회 개최
+<br>미림여자정보과학고등학교 정보보안 특강
+<br>미림여자정보과학고등학교 방과후학교 CCNA 강의
+<br>Software Maestro 1기 3명 배출
+<br>교내해킹대회 우승
+<br>제7회 KISA 해킹방어대회 우수상 (준우승)
+<br>ISEC CTF 우승 - 지식경제부 장관상<br>
+<br><span style="font-size:25px;"><b>2011년</b></span><br>
+전국 중고교생 해킹대회 개최
+<br>ISEC CTF 본선 2팀 진출
+<br>Software Maestro 2기 1명 배출
+<br>교내해킹대회 우승
+<br>2011 정보보호올림피아드 대상<br>
+<br><span style="font-size:25px;"><b>2012년</b></span><br>
+KISA 해킹방어대회 본선 진출
+<br>SECUINSIDE CTF 본선 진출
+<br>Best Of Best 1기 3명 배출
+<br>Software Maestro 3기 2명 배출
+<br>교내해킹대회 우승
+<br>2012 정보보호올림피아드 금상, 은상
+<br>2012 순천향대 정보보호 페스티벌 지식정보산업협회장상, 안랩 대표상
+<br>제1회 호서대학교 정보보호 경진대회 금상, 은상
+<br>B10S JFF Season 2 3위<br>
+<br><span style="font-size:25px;"><b>2013년</b></span><br>
+2013 인하대학교 NewHeart 해킹대회 1위, 3위
+<br>부원 팀중 SECUINSIDE CTF 본선 진출
+<br>부원 중 Best of Best 6인
+<br>제 1회 Etri 주니어 해킹대회 1위 우승, 4위 동상
+<br>Best of Best 2기 2명 배출
+<br>Software Maestro 4기 1명 배출
+<br>2013 순천향대 정보보호 페스티벌 1위 우승
+<br>sGen 1명 배출
+<br>부원 팀중 KISA 해킹방어대회 본선 준우승
+<br>2013 정보보호올림피아드 대상, 은상
+<br>제 1회 화이트햇 콘테스트 청소년 개인전 2위
+<br>부원 팀중 제 1회 화이트햇 콘테스트 청소년 팀전 3위
+<br>제 2회 호서대학교 정보보호 경진대회 1위 금상, 5위 동상
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page4" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<h3>Commonly Asked Questions</h3>
+				</div>
+				<div class="companies">
+						<div class="grid_12"><li><span style="font-size:25px;"><b>Layer7에 들어가려면 어떻게 해야하나요?</b></li></span><br>▶ 자신의 열정이 확실하다고 느끼면 충분합니다.</div>
+						<br><br><br><br><br><br><br>
+						<div class="grid_12"><li><span style="font-size:25px;"><b>언제 Layer7에 지원할 수 있나요?</b></li></span><br>▶학기시작 3월 중순 지원가능합니다.</div>
+						<br><br><br><br><br><br><br>
+						<div class="grid_12"><li><span style="font-size:25px;"><b>해킹에 관해서는 아무것도 모르면 어떡하죠????</b></li></span><br>▶처음엔 다 모름<br>그러나 좋은 선배들이 짱해커의 길로 인도 해줍니다.</div>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page5" class="content">
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="slogan">
+						<h3>Get in Touch&nbsp&nbsp<img src="./images/rebon.png" width="25" height="35"></h3>
+						<div class="text1">
+							궁금점, 동아리문의 사항이 생기시면 아래 연락처로 연락바랍니다.
+						</div>
+					</div>
+				</div>
+				<div class="clear"></div>
+				<div class="map">
+					<div class="grid_3">
+						<div class="text1">Address</div>
+						<address>
+							<dl>
+								<dt>Layer7<br>
+								용산구 청파동 3가 131-2<br>
+								선린인터넷고등학교
+								</dt>
+								<dd>13기 부장<br><span>Telephone:</span>010-4112-1398 </dd>
+								<dd>E-mail: kjungi704@gmail.com</dd>
+								<dd>Page: <a href="http://layer7.kr" class="link-1">layer7.kr</a></dd>
+							</dl>
+						</address>
+					</div>
+                    <img src ="./layer2014_1.jpg" width="600" height="400"/>
+<!--
+
+					<div class="grid_3">
+						<div class="text1">&nbsp;</div>
+						<figure class="">
+							<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=ko&amp;geocode=&amp;q=%EC%84%A0%EB%A6%B0%EC%9D%B8%ED%84%B0%EB%84%B7%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=65.390746,135.263672&amp;ie=UTF8&amp;hq=%EC%84%A0%EB%A6%B0%EC%9D%B8%ED%84%B0%EB%84%B7%EA%B3%A0%EB%93%B1%ED%95%99%EA%B5%90&amp;hnear=&amp;radius=15000&amp;ll=37.542371,126.966666&amp;spn=0.071946,0.071946&amp;t=m&amp;output=embed"></iframe><br>
+						</figure>
+					</div>
+					<div class="grid_5 prefix_1">
+						<div class="text1">To Layer7 console</div>
+						<a href="console.html"><img src="./images/console.png"></a>
+						<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp "click me"
+					</div>
+                    -->
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+<!--==============================footer=================================-->
+		<footer>
+			<div class="container_12">
+				<div class="grid_12">
+					<div class="copy">
+						<p style="font-size:15px;">Layer7 13th</p><br>
+						2014 Layer7 main page.
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</footer>
+	</body>
+</html>

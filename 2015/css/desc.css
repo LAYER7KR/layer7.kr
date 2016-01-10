@@ -1,0 +1,108 @@
+@import url( http://fonts.googleapis.com/earlyaccess/nanumgothic.css );
+* {
+  font-family: "Open Sans", "Helvetica Neue", "Apple SD Gothic Neo", "Nanum Gothic", "Arial", "Apple Gothic", sans-serif;
+}
+
+body {
+  background: rgb(0, 0, 0); margin: 0px; padding: 0px; height: 100%; color: white;
+}
+
+h2 {
+  font-family: "Lato", "Helvetica Neue", "Apple SD Gothic Neo", "Nanum Gothic", "Arial", "Apple Gothic", sans-serif;
+}
+h3 {
+  font-family: "Lato", "Helvetica Neue", "Apple SD Gothic Neo", "Nanum Gothic", "Arial", "Apple Gothic", sans-serif;
+}
+h4 {
+  font-family: "Lato", "Helvetica Neue", "Apple SD Gothic Neo", "Nanum Gothic", "Arial", "Apple Gothic", sans-serif;
+}
+
+
+.headline {
+  width: 100%;
+}
+.headline h1 {
+  margin: 10px 0px 20px; text-align: center; font-size: 3.5em; font-weight: 700;
+}
+
+.wrap {
+  margin: auto; width: 92%; max-width: 960px;
+}
+hr {
+  margin: 60px auto; border: 2px solid black; border-image: none; width: 80%; max-width: 480px;
+}
+.content3 h2 {
+  margin: 10px 0px 50px; font-size: 2.5em; font-weight: 700;
+}
+.content3 h3 {
+  margin: 40px 0px 10px; padding-bottom: 2px; padding-left: 16px; font-size: 1.5em; border-left-color: #F5A503; border-left-width: 7px; border-left-style: solid;
+}
+.content3 h4 {
+  font-size: 1.15em; margin-top: 14px; margin-bottom: 0px;
+}
+.content3 p {
+  line-height: 172%; font-size: 1.05em;
+}
+.content3 li {
+  line-height: 172%; font-size: 1.05em;
+}
+.content3 p {
+  margin-top: 3px;
+}
+.content3 a {
+  padding: 6px 16px 7px; border-radius: 10px; border: 3px solid rgb(51, 51, 51); border-image: none; color: black; line-height: 300%; font-weight: 700; text-decoration: none; background-color: rgb(254, 220, 119);
+}
+.content3 a:hover {
+  background-color: rgb(255, 236, 130);
+}
+.content3 .nav {
+  line-height: 150%; float: right; background-color: rgb(255, 255, 255);
+}
+.content3 .nav:hover {
+  background-color: rgb(221, 221, 221);
+}
+.photoalbum {
+  list-style: none; margin: 0px; padding: 0px; font-size: 0px; position: relative;
+}
+.hoodie-sample {
+  padding: 10px; border-radius: 200px; width: 200px; height: auto; float: right;
+}
+.photoalbum li {
+  margin: 0px; padding: 0px; display: inline;
+}
+.photoalbum img {
+  margin: 0px; padding: 0px; box-sizing: border-box;
+}
+.photoalbum .photo-lg {
+  border: 5px solid white; border-image: none; width: 100%; height: auto;
+}
+.photoalbum .photo-sm {
+  border: 5px solid white; border-image: none; width: 33.33%; height: auto;
+}
+.layer-logo {
+  margin-left: 30%; width: 40%; height: auto;
+}
+
+
+
+@media all and (max-width:640px)
+{
+.hoodie-sample {
+  width: 96px;
+}
+.content3 p {
+  line-height: 172%; font-size: 0.95em;
+}
+.content3 li {
+  line-height: 172%; font-size: 0.95em;
+}
+.footer p {
+  font-size: 0.9em;
+}
+.content3 ul {
+  padding-left: 20px;
+}
+.photoalbum .photo-sm {
+  width: 50%;
+}
+}
